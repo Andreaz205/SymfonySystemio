@@ -1,0 +1,15 @@
+controllers:
+    resource:
+        path: ../src/Shared/Infrastructure/Controller/
+        namespace: App\Shared\Infrastructure\Controller
+    type: attribute
+
+kernel:
+    resource:
+        path: ../src/Shared/Infrastructure/Kernel.php
+        namespace: App\Shared\Infrastructure
+    type: attribute
+
+products:
+    resource: ../src/Products/Infrastructure/Controller/
+    type: attribute

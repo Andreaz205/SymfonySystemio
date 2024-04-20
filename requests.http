@@ -1,0 +1,33 @@
+### Calculate Price
+POST http://127.0.0.1:8337/api/products/info
+Accept: application/json
+Content-Type: application/json
+
+{
+  "product": "Iphone",
+  "tax_number": "DE123456789",
+  "coupon_code": "P50"
+}
+
+### Calculate Price 2
+POST http://127.0.0.1:8337/api/products/info
+Accept: application/json
+Content-Type: application/json
+
+{
+  "product": "Iphone",
+  "tax_number": "DE123456789",
+  "coupon_code": "F1000"
+}
+
+### Execute Purchase
+POST http://127.0.0.1:8337/api/products/purchase
+Accept: application/json
+Content-Type: application/json
+
+{
+  "product": "Iphone",
+  "tax_number": "DE123456789",
+  "coupon_code": "F1000",
+  "payment_processor": "paypal"
+}
